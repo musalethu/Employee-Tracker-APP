@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>EMPLOYEE-TRACKER-APP</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMPLOYEE-TRACKER-APP</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js" defer></script>
 </head>
-
-
 <body>
-    <div class="container">
-      <h1>EMPLOYEE-TRACKER-APP</h1>
-      <div class="add-element">
-        <input type="text" id="tracker-app" placeholder="NAME" />
-        <input type="text" id="tracker-app" placeholder="SURNAME" />
-        <input type="text" id="tracker-app" placeholder="WORKING ON" />
-        <button class="button">SUBMIT</button>
-      </div>
+<h1>EMPLOYEE-TRACKER-APP</h1>
+<table> 
+  
+  <tr>
+    <td>
+      <form onsubmit="onFormSubmit(event)" autocomplete="off">
+        <div>
+          <label>NAME</label>
+        <input type="text" name="Name" id="name">
+        </div>
+        <div>
+          <label>SURNAME</label>
+        <input type="text" name="Surname" id="surname">
+        </div><div>
+          <label>WORKING ON</label>
+        <input type="text" name="WORKINGON" id="work">
+        </div>
+        <div class="form-action-buttons">
+        <input type="SUBMIT" value="SUBMIT">
+         </div>
+      </form>
+    </td>
+    <td>
+     
+<table class="list" id="employee-list">
   <thead>
-      <table id="table">
     <tr>
-    <th>NAME</th>
+      <th>NAME</th>
     <th>SURNAME</th>
-    <th>WORKING ON</th>
-       <th scope="col"></th>
-        <th scope="col"></th>
-         <th scope="col"></th>
-        </tr> 
+    <th>WORKING ON</th> 
+    <th></th>
+    </tr>
   </thead>
+  <tbody>
+
+  </tbody>
+</table>
 </body>
 </html>
