@@ -21,6 +21,8 @@ th {
 tr:nth-child(even),
 table.list thead > tr {
   background-color: floralwhite;
+  font-family: monospace;
+  font-size: large;
 }
 
 input[type="text"]{
@@ -31,6 +33,8 @@ input[type="text"]{
   border: 2px solid floralwhite;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: large;
+  font-family: monospace;
 }
 input[type="SUBMIT"] {
   width: 20%;
@@ -50,18 +54,17 @@ form div.form-action-buttons {
 }
 a{
   cursor: pointer;
-  text-decoration: underline;
-  color: gray;
+  color: black;
   margin-right: 4px;
+  text-decoration: none;
+  font-size: large;
 }
-label.validation-error{
-  color: red;
-  margin: left;
-}
+
 .hide{
   display: none;
 }
 h1{
   text-align: center;
 }
+
 

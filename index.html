@@ -10,11 +10,7 @@
 </head>
 <body>
 <h1>EMPLOYEE-TRACKER-APP</h1>
-<table> 
-  
-  <tr>
-    <td>
-      <form onsubmit="onFormSubmit(event)" autocomplete="off">
+ <form onsubmit="onFormSubmit(event)" autocomplete="off">
         <div>
           <label>NAME</label>
         <input type="text" name="Name" id="name">
@@ -22,16 +18,20 @@
         <div>
           <label>SURNAME</label>
         <input type="text" name="Surname" id="surname">
-        </div><div>
+        </div>
+        <div>
           <label>WORKING ON</label>
         <input type="text" name="WORKINGON" id="work">
         </div>
         <div class="form-action-buttons">
         <input type="SUBMIT" value="SUBMIT">
+        
          </div>
       </form>
-    </td>
-    <td>
+
+  
+
+   
      
 <table class="list" id="employee-list">
   <thead>
@@ -42,7 +42,7 @@
     <th></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody >
 
   </tbody>
 </table>
